@@ -1,0 +1,62 @@
+{
+  "cliente": [
+    {
+      "id": 1,
+      "nome": "Jessica",
+      "email": "jessica@gmail.com",
+      "reserva": "suite",
+      "data": "12/02/2023 até 13/02/2023"
+    },
+    {
+      "id": 2,
+      "nome": "Json",
+      "email": "json@gmail.com",
+      "reserva": "suite plus",
+      "data": "23/12/2022 até 03/01/2023"
+    },
+    {
+      "id": 3,
+      "nome": "Nathalia",
+      "email": "nathalia@gmail.com",
+      "reserva": "suite",
+      "data": "12/12/2022"
+    }
+  ],
+  "fucionario": [
+    {
+      "id": 1,
+      "login": "Carlos",
+      "cpf": 15478965478,
+      "setor": "cozinha"
+    },
+    {
+      "id": 2,
+      "login": "Luiza",
+      "cpf": 145678912,
+      "setor": "macareira"
+    },
+    {
+      "id": 3,
+      "login": "Luiz",
+      "cpf": 1459875612,
+      "setor": "jardineiro"
+    }
+  ],
+  "socios": [
+    {
+      "id": 1,
+      "login": "Bernardo",
+      "cpf": 16489589789
+    },
+    {
+      "id": 2,
+      "login": "Alessandro",
+      "cpf": 154789645478
+    },
+    {
+      "id": 3,
+      "login": "Gil",
+      "cpf": 16445869789
+    }
+  ]
+}
