@@ -77,7 +77,7 @@ app.put("/socios/:id", (request, response) => {
   return response.json(newSocios);
 });
 
-//detele
+//delete
 
 app.delete("/cliente/:id", (request, response) => {
   const { id } = request.params;
