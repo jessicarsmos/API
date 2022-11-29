@@ -6,13 +6,13 @@ const { uuid } = require("uuidv4"); //id unico
 
 //rotas
 
-const cliente = [];
+const clientes = [];
 const funcionario = [];
 const socios = [];
 
 //get
-app.get("/cliente", (request, response) => {
-  return response.json(cliente);
+app.get("/clientes", (request, response) => {
+  return response.json(clientes);
 });
 
 app.get("/funcionario", (request, response) => {
@@ -25,10 +25,10 @@ app.get("/socios", (request, response) => {
 
 //post
 
-app.post("/cliente", (request, response) => {
+app.post("/clientes", (request, response) => {
   const { nome, email, reserva, data } = request.body;
   const clientes = { id: uuid(), nome, email, reserva, data };
-  cliente.push(clientes);
+  clientes.push(clientes);
   return response.status(201).json(clientes);
 });
 
@@ -48,12 +48,12 @@ app.post("/socios", (request, response) => {
 
 //put
 
-app.put("/cliente/:id", (request, response) => {
+app.put("/clientes/:id", (request, response) => {
   const { id } = request.params;
   const { nome, email, reserva, data } = request.body;
   const newCliente = { id, nome, email, reserva, data };
-  const clientesindex = cliente.findIndex((clientes) => clientes.id == id);
-  cliente[clientesindex] = newCliente;
+  const clientesindex = clientes.findIndex((clientes) => clientes.id == id);
+  clientes[clientesindex] = newCliente;
   return response.json(newCliente);
 });
 
@@ -79,10 +79,10 @@ app.put("/socios/:id", (request, response) => {
 
 //delete
 
-app.delete("/cliente/:id", (request, response) => {
+app.delete("/clientes/:id", (request, response) => {
   const { id } = request.params;
-  const clientesindex = cliente.findIndex((cliente) => cliente.id == id);
-  cliente.splice(clientesindex, 1);
+  const clientesindex = clientes.findIndex((clientes) => clientes.id == id);
+  clientes.splice(clientesindex, 1);
   return response.status(204).send();
 });
 
