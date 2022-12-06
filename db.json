@@ -2,61 +2,64 @@
   "cliente": [
     {
       "id": 1,
-      "nome": "Jessica",
-      "email": "jessica@gmail.com",
-      "reserva": "suite",
-      "data": "12/02/2023 até 13/02/2023"
+      "nome": "Isabela Martiz",
+      "email": "isabela@gmail.com",
+      "data": "12/01/2022"
     },
     {
       "id": 2,
-      "nome": "Json",
+      "nome": "Json Santos",
       "email": "json@gmail.com",
-      "reserva": "suite plus",
-      "data": "23/12/2022 até 03/01/2023"
+      "data": "23/12/2022"
     },
     {
       "id": 3,
-      "nome": "Nathalia",
+      "nome": "Nathalia Rodrigues",
       "email": "nathalia@gmail.com",
-      "reserva": "suite",
       "data": "12/12/2022"
     }
   ],
   "fucionario": [
     {
       "id": 1,
-      "login": "Carlos",
+      "login": "Carlos Alberto",
+      "usuario": "carlos123",
       "cpf": 15478965478,
-      "setor": "cozinha"
+      "turno": "Manhã",
+      "funcao": "cozinheiro"
     },
     {
       "id": 2,
-      "login": "Luiza",
+      "login": "Luiza Costa",
+      "usuario": "luiza123",
       "cpf": 145678912,
-      "setor": "camareira"
+      "turno": "Tarde",
+      "funcao": "camareira"
     },
     {
       "id": 3,
-      "login": "Luiz",
+      "login": "Luiz Costa",
+      "usuario": "luiz123",
       "cpf": 1459875612,
-      "setor": "jardineiro"
+      "turno": "noite",
+      "funcao": "jardineiro"
     }
   ],
-  "socios": [
+  "Quarto": [
     {
       "id": 1,
-      "login": "Bernardo",
-      "cpf": 16489589789
+      "quarto": "suite Bela vista",
+      "descricao": "Grande suite de frente pro mar "
     },
     {
       "id": 2,
-      "login": "Alessandro",
-      "cpf": 154789645478
+      "quarto": "suite atena",
+      "descricao": "Suite com uma bela cama queen e uma banheira de tirar o folego"
     },
     {
       "id": 3,
-      "login": "Gil",
-      "cpf": 16445869789
+      "quarto": "suite de luxo",
+      "descricao": "Perfeita para para sua lua de mel"
     }
   ]
 }

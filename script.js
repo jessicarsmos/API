@@ -8,7 +8,7 @@ const { uuid } = require("uuidv4"); //id unico
 
 const cliente = [];
 const funcionario = [];
-const socios = [];
+const quarto = [];
 
 //get
 app.get("/cliente", (request, response) => {
@@ -19,8 +19,8 @@ app.get("/funcionario", (request, response) => {
   return response.json(funcionario);
 });
 
-app.get("/socios", (request, response) => {
-  return response.json(socios);
+app.get("/quarto", (request, response) => {
+  return response.json(quarto);
 });
 
 //post
@@ -39,11 +39,11 @@ app.post("/funcionario", (request, response) => {
   return response.status(201).json(funcionarios);
 });
 
-app.post("/socios", (request, response) => {
+app.post("/quarto", (request, response) => {
   const { login, cpf } = request.body;
-  const sociedade = { id: uuid(), login, cpf };
-  socios.push(sociedade);
-  return response.status(201).json(sociedade);
+  const suite = { id: uuid(), login, cpf };
+  quarto.push(suite);
+  return response.status(201).json(suite);
 });
 
 //put
@@ -68,13 +68,13 @@ app.put("/funcionario/:id", (request, response) => {
   return response.json(newFuncionario);
 });
 
-app.put("/socios/:id", (request, response) => {
+app.put("/quarto/:id", (request, response) => {
   const { id } = request.params;
   const { login, cpf } = request.body;
-  const newSocios = { id, login, cpf };
-  const sociedadeindex = socios.findIndex((sociedade) => sociedade.id == id);
-  socios[sociedadeindex] = newSocios;
-  return response.json(newSocios);
+  const newquarto = { id, login, cpf };
+  const suiteindex = quarto.findIndex((suite) => suite.id == id);
+  quarto[suiteindex] = newquarto;
+  return response.json(newquarto);
 });
 
 //delete
@@ -95,10 +95,10 @@ app.delete("/funcionario/:id", (request, response) => {
   return response.status(204).send();
 });
 
-app.delete("/socios/:id", (request, response) => {
+app.delete("/quarto/:id", (request, response) => {
   const { id } = request.params;
-  const sociedadeindex = socios.findIndex((sociedade) => sociedade.id == id);
-  socios.splice(sociedadeindex, 1);
+  const suiteindex = quarto.findIndex((suite) => suite.id == id);
+  quarto.splice(suiteindex, 1);
   return response.status(204).send();
 });
 
