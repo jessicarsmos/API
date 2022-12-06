@@ -1,5 +1,5 @@
 {
-  "cliente": [
+  "clientes": [
     {
       "id": 1,
       "nome": "Isabela Martiz",
@@ -19,7 +19,7 @@
       "data": "12/12/2022"
     }
   ],
-  "fucionario": [
+  "fucionarios": [
     {
       "id": 1,
       "login": "Carlos Alberto",
